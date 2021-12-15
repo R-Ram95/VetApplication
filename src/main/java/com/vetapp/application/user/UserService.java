@@ -12,11 +12,6 @@ import java.util.List;
 @Service
 public class UserService {
 
-    // instance of user database
-    // query db for uname and password
-    // if we get valid user
-    // create the TokenManager
-
     @Autowired
     UserRepository repository;
 
@@ -70,10 +65,6 @@ public class UserService {
         return userFromDB;
     }
 
-//    public void setUserById(int id){
-//        User userFromDB = repository.findById(id).get();
-//        return userFromDB;
-//    }
 
     public boolean checkIdExists(int id){
         if(repository.existsById(id)){
@@ -140,19 +131,7 @@ public class UserService {
         nameFound.addAll(repository.findByfnameContaining(name));
         nameFound.addAll(repository.findBylnameContaining(name));
 
-//        if(role.equals("Staff")){
-//            List<String> allRoles = new ArrayList<>();
-//            allRoles.add("Teaching Technician");
-//            allRoles.add("Health Technician");
-//            allRoles.add("Care Attendant");
-//
-//                for(int j = 0; j<allRoles.size(); j++) {
-//                    for (int i = 0; i < nameFound.size(); i++) {
-//                    if (!nameFound.get(i).getRole().equals(allRoles.get(j))) {
-//                        nameFound.remove(i);
-//                    }
-//                }
-//            }
+
         if(role.equals("Staff")) {
             for (int i = 0; i < nameFound.size(); i++) {
                 if (!nameFound.get(i).getRole().equals("Teaching Technician") && !nameFound.get(i).getRole().equals("Health Technician") && !nameFound.get(i).getRole().equals("Care Attendant")) {
@@ -188,15 +167,6 @@ public class UserService {
         }catch(Exception e){
             return "Password change is unsucessful";
         }
-
-
-
-//        if(userFromDB.getPassword().equals(password)){
-//            userFromDB.setPassword(userFromDB.getPassword());
-//            repository.save(userFromDB);
-//            return "Password has been changed successful";
-//        }
-//        return "Password change is unsuccessful";
     }
 
     public boolean checkValidPassword(String password, User userFromDB){

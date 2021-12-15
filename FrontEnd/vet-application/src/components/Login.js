@@ -28,7 +28,6 @@ const Login = ({forgotPassword}) => {
 
                 if(token === ""){
                     alert("Failed to log in, try again.")
-                    console.log("hit the null loop")
                     return; 
                 }
                 const base64Url = token.split('.')[1];
