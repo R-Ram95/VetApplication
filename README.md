@@ -4,8 +4,9 @@ This was a project for a Software Design and Architecture course during the firs
 # Technologies Used
 * Client side:
   * browser based
-  * React using Bulma CSS framework
-  * axios for http calls
+  * Javascript using React
+  * Bulma CSS framework
+  * axios
 * Server side:
   * Java with Spring Framework
   * SQL Data base
