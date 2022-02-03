@@ -10,6 +10,5 @@ This was a project for a Software Design and Architecture course during the firs
 * Server side:
   * Java with Spring Framework
   * SQL Data base
-  * JWT and Auth0 for authentication and authorization
   
 The overall architecture uses MVC.
