@@ -1,5 +1,5 @@
 # Introduction
-This was a project for a Software Design and Architecture course during the first semester of my software engineering masters. The goal was to develop a full stack application for a veterinary clinic to manage their animals and users.
+This was a project developed for the School of Veterinary Medicine at the University of Calgary. The goal was to develop a full stack application to enable the clinic to manage their animals and personnel.
 
 # Technologies Used
 * Client side:
@@ -9,6 +9,6 @@ This was a project for a Software Design and Architecture course during the firs
   * axios
 * Server side:
   * Java with Spring Framework
+  * Hibernate ORM
   * SQL Data base
   
-The overall architecture uses MVC.
